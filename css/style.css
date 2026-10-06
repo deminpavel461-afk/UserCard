@@ -1,0 +1,100 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/InterRegular.woff2");
+  font-display: swap;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.user-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid #2a2f37;
+  border-radius: 20px;
+  padding: 16px 24px 16px 16px;
+  background: #1a1d22;
+}
+.user-card__avatar {
+  display: block;
+  border-radius: 100%;
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+}
+.user-card__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #f3f4f6;
+  text-decoration: none;
+  background: #00447c;
+  transition: background 0.3s;
+}
+
+.user-card__link:hover {
+  background: #035496;
+}
+.user-card__name{
+	color: #F3F4F6;
+	font-size: 20px;
+	margin-bottom: 6px;
+}
+
+.user-card__position{
+	color: #9CA3AF;
+;
+}
